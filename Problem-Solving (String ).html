@@ -29,6 +29,17 @@
         // use only "substr Method + Template Literals In you Solution"
         // Output : Elzero School 
         console.log(a.substr(0, 6) + " " + a.substr(11));
+
+        console.log("**********************");
+
+        const sortString = (months) => {
+            const word = months.split("");
+            word.sort();
+            console.log(word.join(""));
+            const sort = word.toString();
+            return sort;
+        };
+        console.log(sortString("ALiB"));
     </script>
 </body>
 

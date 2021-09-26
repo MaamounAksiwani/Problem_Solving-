@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Condition Challenge</title>
+</head>
+
+<body>
+
+    <h1>If Condition Challenge</h1>
+
+
+    <script>
+        let a = 10;
+        if (a < 10) {
+            console.log(10);
+        } else if (a >= 10 && a <= 40) {
+            console.log(" 10 to 40");
+        } else if (a > 40) {
+            console.log(" > 40");
+        } else {
+            console.log("unKnown");
+        }
+        // Write With Ternary if Syntax
+
+        a < 10 ? console.log(10) : a >= 10 && a <= 40 ? console.log("10 to 40") : a >= 40 ? console.log(" > 40") : console.log("UnKnown");
+
+
+        let str = "Elzero Web School";
+
+        //Q1
+        let lengthStr = str.length * 2;
+        if (lengthStr.toString() === "34") {
+            console.log("Good");
+        }
+
+        ///Q2 
+
+        const findIndex = str.charAt(str.search("W")).toLowerCase();
+        console.log(findIndex);
+        if (findIndex === "w") {
+            console.log("Good")
+        } else {
+            console.log("False");
+        }
+
+        //Q3
+        const myarr = str.split(' ');
+        if (myarr !== "String") {
+            console.log("Good")
+        } else {
+            console.log("False");
+        }
+
+        //Q4
+        const numbers = parseInt(str);
+        if (typeof(numbers) === "number") {
+            console.log("Good")
+        } else {
+            console.log("False");
+        }
+
+
+        //Q5
+        const Duplicate = str.split(' ');
+        const repeat = Duplicate[0].repeat(2);
+        if (repeat === "ElzeroElzero") {
+            console.log("Good")
+        } else {
+            console.log("False");
+        }
+    </script>
+</body>
+
+</html>
