@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+
+    <script>
+        const myadmins = ['Ahmad', "Osama", "Sayed", "Stop", "Samera"];
+        let myEmployees = ["Amgad", "Samah", "Ammer", "Omar", "Tawfiq", "Othman", "Amany", "Ahmad", "Siad"];
+        let i = 0;
+        document.write(`<div> we Have ${myadmins[i].length - 2} Admin</div>`);
+        for (i; i < myadmins.length; i++) {
+            if (myadmins[i] === "Stop") {
+                break;
+            }
+            document.write("<hr> </hr>");
+            document.write("<div>");
+            document.write(`<h2>The Admin for Team ${i + 1} is ${myadmins[i]} </h2>`);
+            document.write(`<h4> Team Members</h4>`);
+
+            for (let j = 0; j < myEmployees.length; j++) {
+                if (myEmployees[j][0] === myadmins[i][0]) {
+                    document.write('<div>');
+                    document.write(`<p> -  ${myEmployees[j]} <p>`)
+                    document.write("</div>");
+                }
+            }
+            document.write("</div>");
+        }
+    </script>
+</body>
+
+</html>
