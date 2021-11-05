@@ -11,10 +11,10 @@
 <body>
 
     <script>
-        const myadmins = ['Ahmad', "Osama", "Sayed", "Stop", "Samera"];
-        let myEmployees = ["Amgad", "Samah", "Ammer", "Omar", "Tawfiq", "Othman", "Amany", "Ahmad", "Siad"];
+        const myadmins = ['Ahmad', "Osama", "Wafaa", "Sayed", "Stop", "Samera"];
+        let myEmployees = ["Amgad", "Samah", "Ammer", "Omar", "Tawfiq", "Othman", "Amany", "Ahmad", "Sami", "Walid"];
         let i = 0;
-        document.write(`<div> we Have ${myadmins[i].length - 2} Admin</div>`);
+
         for (i; i < myadmins.length; i++) {
             if (myadmins[i] === "Stop") {
                 break;
@@ -24,10 +24,11 @@
             document.write(`<h2>The Admin for Team ${i + 1} is ${myadmins[i]} </h2>`);
             document.write(`<h4> Team Members</h4>`);
 
-            for (let j = 0; j < myEmployees.length; j++) {
+            for (let j = 0, n = 1; j < myEmployees.length; j++) {
                 if (myEmployees[j][0] === myadmins[i][0]) {
                     document.write('<div>');
-                    document.write(`<p> -  ${myEmployees[j]} <p>`)
+                    document.write(`<p> - ${n} ${myEmployees[j]} <p>`);
+                    n++;
                     document.write("</div>");
                 }
             }
